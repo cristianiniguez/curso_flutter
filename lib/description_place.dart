@@ -32,7 +32,6 @@ class DescriptionPlace extends StatelessWidget {
       margin: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
       child: Text(
         descriptionPlace,
-        textAlign: TextAlign.left,
         style: TextStyle(
           fontFamily: "Lato",
           fontSize: 16.0,

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue),
       home: Scaffold(
         appBar: AppBar(title: Text("Hola Mundo Feliz")),
-        body: DescriptionPlace("Bahamas", 4, "lorem ipsum dolor"),
+        body: DescriptionPlace("Bahamas", 4, "lLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum in est id euismod. Vivamus tempus viverra lectus sit amet interdum. Quisque nibh sem, porttitor quis aliquet a, mollis et lorem."),
       ),
     );
   }
