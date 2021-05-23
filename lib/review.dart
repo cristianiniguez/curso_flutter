@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget {
+  String pathImage = "assets/img/people.jpg";
+
+  Review(this.pathImage);
+
   @override
   Widget build(BuildContext context) {
     final photo = Container(
@@ -12,17 +16,15 @@ class Review extends StatelessWidget {
       height: 80.0,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        image: "",
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage(pathImage),
+        ),
       ),
     );
 
-
-
     return Row(
-      children: [
-
-      ],
+      children: [],
     );
   }
-
 }
