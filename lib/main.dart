@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'review_list.dart';
 import 'description_place.dart';
 import 'gradient_back.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(
+    SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light,
+    ),
+  );
+
   runApp(MyApp());
 }
 
@@ -23,7 +31,7 @@ class MyApp extends StatelessWidget {
                 ReviewList()
               ],
             ),
-            GradientBack()
+            GradientBack("Popular")
           ],
         ),
       ),
